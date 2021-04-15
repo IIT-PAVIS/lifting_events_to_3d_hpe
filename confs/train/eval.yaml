@@ -1,0 +1,13 @@
+defaults:
+  - dataset: time count
+  - augmentation: no_aug
+  - training: margipose
+ 
+gpus: [0]
+root_dir: /home/gianlucascarpellini/dev
+model_zoo: /home/gianlucascarpellini/dev/event-based-monocular-hpe/model_zoo
+load_path:
+result_file: aucs.json 
+num_workers: 12
+
+batch_size: 256

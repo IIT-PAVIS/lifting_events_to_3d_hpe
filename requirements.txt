@@ -1,0 +1,20 @@
+albumentations
+h5py
+scikit-image
+scikit-learn
+scikit-video
+scipy
+torch>1
+kornia
+hydra-core==1.0.6
+omegaconf
+opencv-python
+pytorch-lightning==1.1.5
+torchvision
+tqdm
+numpy
+matplotlib
+segmentation_models_pytorch
+sklearn
+-e git+https://github.com/anibali/pose3d-utils#egg=pose3d_utils
+comet_ml
