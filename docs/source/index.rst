@@ -3,16 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the documentation for `Lifting Monocular Events to 3D Human Poses!
-===============================================================================
 
+**********************************
+Getting Started with `Lifting Monocular Events to 3D Human Poses!
+**********************************
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-**********************************
-Getting Started
-**********************************
 
 * Train classification models based on ResNet18, Resnet34, ...
 * Train 3D reconstruction models
