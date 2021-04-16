@@ -39,7 +39,6 @@ class DHP19Core(BaseCore):
         cams,
         movements,
         joints_dir,
-        preload_dir,
         n_classes,
         n_joints,
         partition,
@@ -70,9 +69,9 @@ class DHP19Core(BaseCore):
 
         self.test_subjects = test_subjects
         if test_cams is None:
-            self.view = DHP19Core.DEFAULT_TEST_VIEW
+            self.test_cams = DHP19Core.DEFAULT_TEST_VIEW
         else:
-            self.view = test_cams
+            self.test_cams = test_cams
 
     @staticmethod
     def get_standard_path(subject, session, movement, frame, cam, postfix=""):
@@ -160,10 +159,10 @@ class DHP19Core(BaseCore):
         return result
 
     def get_test_subjects(self):
-        return self.subjects
+        return self.test_subjects
 
     def get_test_view(self):
-        return self.view
+        return self.test_cams
 
     @staticmethod
     def _get_info_from_string(filename, info, split_symbol="_"):
@@ -203,7 +202,7 @@ class DHP19Core(BaseCore):
         return labels_hm
 
     def train_partition_function(self, x):
-        return self.frems_info[x]['subject'] not in self.test_subject and self.frames_info[x]['cam'] not in self.test_cams
+        return self.frames_info[x]['subject'] not in self.test_subjects and self.frames_info[x]['cam'] not in self.test_cams
 
 
 def load_heatmap(path, n_joints):

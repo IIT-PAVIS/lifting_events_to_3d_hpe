@@ -85,9 +85,9 @@ class HumanCore(BaseCore):
 
         self.timestamps_mask = self.get_timestamps_mask()
         if test_subjects is None:
-            self.subjects = HumanCore.DEFAULT_TEST_SUBJECTS
+            self.test_subjects = HumanCore.DEFAULT_TEST_SUBJECTS
         else:
-            self.subjects = test_subjects
+            self.test_subjects = test_subjects
 
         if train_cams is None:
             self.train_cams = HumanCore.DEFAULT_TRAIN_VIEW
@@ -100,7 +100,7 @@ class HumanCore(BaseCore):
             self.view = test_cams
 
     def get_test_subjects(self):
-        return self.subjects
+        return self.test_subjects
 
     def get_test_view(self):
         return self.view
@@ -352,4 +352,4 @@ class HumanCore(BaseCore):
         )
 
     def train_partition_function(self, x):
-        return self.frems_info[x]['subject'] not in self.test_subject and self.frames_info[x]['cam'] in self.train_cams
+        return self.frames_info[x]['subject'] not in self.test_subjects and self.frames_info[x]['cam'] in self.train_cams
