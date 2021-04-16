@@ -89,13 +89,3 @@ generates a `result.json` file in the provided checkpoint path.
 python evaluate_dhp19.py training={TASK} dataset={DATASET_REPRESENTATION} load_path={YOUR_MODEL_CHECKPOINT}
 ```
 
-This framework is intended to be fully extensible. It's based upon
-`pytorch_lighting` [[1]](#1) and `hydra` configuration files.
-
-References
-============
-<a id="1">[1]</a> 
-Falcon, WA and .al (2019). 
-PyTorch Lightning
-GitHub. Note: https://github.com/PyTorchLightning/pytorch-lightning
-
