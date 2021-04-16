@@ -18,13 +18,13 @@ def get_info():
 long_description, version = get_info()
 
 setuptools.setup(
-    name='Master_thesis',
+    name='lifting_events_to_3d_hpe',
     version=version,
-    description='My master thesis',
+    description='Code for 2021 CVPRw "Lifting Monocular Events to 3D Human Poses"',
     long_description=long_description,
     author='Gianluca Scarpellini',
-    author_email='gianluca@scarpellini.dev',
-    url='https://github.com/gianscarpe/event-camera',
+    author_email='gianluca.scarpellini@iit.it',
+    url='https://github.com/iit-pavis/lifting_events_to_3d_hpe',
     install_requires=[
         'albumentations',
         'opencv-python==4.2.0.34',
