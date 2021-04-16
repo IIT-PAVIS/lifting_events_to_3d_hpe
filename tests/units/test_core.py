@@ -4,7 +4,7 @@ from unittest import mock
 import numpy as np
 from omegaconf import DictConfig
 
-from experimenting.dataset.core import DHP19Core, HumanCore, NTUCore
+from experimenting.dataset.core import DHP19Core, HumanCore
 
 
 class TestCore(unittest.TestCase):
@@ -103,23 +103,7 @@ class TestDHP19ParamsCrossView(TestCore):
         )
         self.core = DHP19Core(**self.hparams)
 
-
-class TestNTUParams(TestCore):
-    def setUp(self):
-        data_dir = 'tests/data/ntu/frames'
-        labels_dir = 'tests/data/ntu/labels'
-        self.hparams = DictConfig(
-            {
-                'name': 'test',
-                'data_dir': data_dir,
-                'labels_dir': labels_dir,
-                'test_subjects': [19],
-                'partition': 'cross-subject',
-            }
-        )
-        self.core = NTUCore(**self.hparams)
-
-
+     
 class TestHumanCore(TestCore):
     @mock.patch(
         "experimenting.dataset.core.h3mcore.HumanCore.get_pose_data", mock.Mock()
