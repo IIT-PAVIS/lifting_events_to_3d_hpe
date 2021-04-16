@@ -74,12 +74,13 @@ MOCK_MANUAL_PACKAGES = [
     'cv2',
     'pytorch_lightning',
     'pose3d_utils',
+    
 ]
 autodoc_mock_imports = MOCK_PACKAGES + MOCK_MANUAL_PACKAGES
 
 # -- Project information -----------------------------------------------------
 
-project = 'master_thesis'
+project = '2021 CVPRw Lifting Monocular Events to 3D Human Poses'
 copyright = experimenting.__copyright__
 author = experimenting.__author__
 version = experimenting.__version__
