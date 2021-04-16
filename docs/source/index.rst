@@ -19,14 +19,6 @@ Project
 * Generate events from events dataset with different frames representations
   (constant-count, spatiotemporal voxelgrid)
 
-Table of contents
-------------------
-- [Environment](#environment)
-- [Data](#data)
-- [Model zoo](#model-zoo)
-- [Agents](#agents)
-
-
 Environment
 ------------------
 Create a `virtualenv` environment from `requirements.txt`. 
