@@ -4,7 +4,7 @@ number of *cores* and *tasks*
 
 ## Cores provided
 - DHP19
-- NTU
+- H3M
 
 ## Tasks provided
 - Autoencoder
