@@ -37,8 +37,10 @@ standard RGB and event-based vision.
 - [Paper (coming soon)]()
 
 ## Event-Human3.6m
-![Example of simulated events from Human3.6m](./resources/figures/h3m.png)
 The generation pipeline details and code are released at [https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m).
+
+![Example of simulated events from Human3.6m](./resources/figures/h3m.png)
+
 
 ## Results
 ![Results](./resources/figures/results.png)
