@@ -10,8 +10,9 @@ Welcome to the documentation for `Lifting Monocular Events to 3D Human Poses!
    :maxdepth: 2
    :caption: Contents:
 
-Project
-==========
+**********************************
+Getting Started
+**********************************
 
 * Train classification models based on ResNet18, Resnet34, ...
 * Train 3D reconstruction models
@@ -20,7 +21,7 @@ Project
   (constant-count, spatiotemporal voxelgrid)
 
 Environment
-------------------
+============
 Create a `virtualenv` environment from `requirements.txt`. 
 Using pipenv:
 
@@ -31,21 +32,25 @@ python -m pip install .
 ```
 
 Data
-------
+============
 
-### DHP19
-Follow DHP19 guide at `scripts/dhp19/README.md`
+DHP19
+-----------
+.. mdinclude:: ../../scripts/dhp19/README.md
 
-### Events-H3m
-Follow the guide at `scripts/h3m/README.md`
 
-### Model zoo
+Events-H3m
+-----------
+.. mdinclude:: ../../scripts/h3m/README.md
+
+Model zoo
+-----------
 A model zoo of backbones and models for `constant_count` and `voxelgrid` trained
 both with `DHP19` and `Events-H3m` is publicly accessible at [work in progress].
 
 Agents
---------
-### Train and evaluate for different tasks
+========
+Train and evaluate for different tasks
 If you want to launch an experiment with default parameters (backbone `ResNet50`, `DHP19` with `constant-count` representation, see the paper for details), you simply do (after setup and data):
 
 ```
@@ -91,7 +96,7 @@ This framework is intended to be fully extensible. It's based upon
 `pytorch_lighting` [[1]](#1) and `hydra` configuration files.
 
 References
-------------
+============
 <a id="1">[1]</a> 
 Falcon, WA and .al (2019). 
 PyTorch Lightning
