@@ -5,7 +5,7 @@
 
 
 **********************************
-Getting Started with `Lifting Monocular Events to 3D Human Poses!
+Getting Started with Lifting Monocular Events to 3D Human Poses
 **********************************
 .. toctree::
    :maxdepth: 2
