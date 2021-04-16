@@ -73,6 +73,7 @@ class DHP19Core(BaseCore):
         else:
             self.test_cams = test_cams
 
+
     @staticmethod
     def get_standard_path(subject, session, movement, frame, cam, postfix=""):
         return "S{}_session_{}_mov_{}_frame_{}_cam_{}{}.npy".format(
@@ -164,6 +165,7 @@ class DHP19Core(BaseCore):
     def get_test_view(self):
         return self.test_cams
 
+
     @staticmethod
     def _get_info_from_string(filename, info, split_symbol="_"):
         return int(filename[filename.find(info) :].split(split_symbol)[1])
@@ -203,6 +205,7 @@ class DHP19Core(BaseCore):
 
     def train_partition_function(self, x):
         return self.frames_info[x]['subject'] not in self.test_subjects and self.frames_info[x]['cam'] not in self.test_cams
+
 
 
 def load_heatmap(path, n_joints):
