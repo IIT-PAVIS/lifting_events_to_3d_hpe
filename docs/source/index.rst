@@ -89,3 +89,8 @@ generates a `result.json` file in the provided checkpoint path.
 python evaluate_dhp19.py training={TASK} dataset={DATASET_REPRESENTATION} load_path={YOUR_MODEL_CHECKPOINT}
 ```
 
+
+**********************************
+Code-base documentation
+**********************************
+   modules
