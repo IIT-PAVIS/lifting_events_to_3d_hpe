@@ -4,7 +4,6 @@ from unittest import mock
 import numpy as np
 from omegaconf import DictConfig
 
-from experimenting.dataset.core import DHP19Core, NTUCore
 from experimenting.dataset.factory import (
     AutoEncoderConstructor,
     ClassificationConstructor,
