@@ -2,7 +2,7 @@
 [![Documentation
 Status](https://readthedocs.org/projects/event-camera/badge/?version=latest)](https://event-camera.readthedocs.io/en/latest/?badge=latest)
 [![Coverage Status](https://coveralls.io/repos/github/gianscarpe/event-based-monocular-hpe/badge.svg?branch=master)](https://coveralls.io/github/gianscarpe/event-based-monocular-hpe?branch=master)
-# Event-based monocular HPE
+# Lifting Monocular Events to 3D Human Poses
 
 * Train classification models based on ResNet18, Resnet34, ...
 * Train 3D reconstruction models
