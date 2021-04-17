@@ -93,7 +93,6 @@ class BaseDataFactory(ABC):
         test_indexes_mask = [
             self.core_dataset.partition_function(x) for x in data_indexes
         ]
-
         test_indexes = data_indexes[test_indexes_mask]
 
         train_indexes_mask = [
