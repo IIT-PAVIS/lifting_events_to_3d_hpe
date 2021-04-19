@@ -35,13 +35,8 @@ python -m pip install .
 Data
 ============
 
-DHP19
------------
 .. mdinclude:: ../../scripts/dhp19/README.md
 
-
-Events-H3m
------------
 .. mdinclude:: ../../scripts/h3m/README.md
 
 Model zoo
