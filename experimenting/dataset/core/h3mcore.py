@@ -81,6 +81,7 @@ class HumanCore(BaseCore):
         ]
         self.n_joints = HumanCore.N_JOINTS
         self.joints = HumanCore.get_pose_data(joints_path)
+        
         self.frames_info = [HumanCore.get_frame_info(x) for x in self.file_paths]
 
         self.timestamps_mask = self.get_timestamps_mask()
@@ -173,6 +174,7 @@ class HumanCore(BaseCore):
         for i in data_indexes:
             try:
                 t = self.try_get_timestamp_from_id(i)
+                
                 if t < last:
                     last = 0
                 if t - last > freq:
@@ -180,6 +182,7 @@ class HumanCore(BaseCore):
                     last = t
             except:
                 continue
+        
         return mask
 
     @staticmethod
@@ -197,7 +200,7 @@ class HumanCore(BaseCore):
     @staticmethod
     def _get_timestamps_data(data, result: dict):
         result = copy.deepcopy(result)
-
+        
         if 'timestamps' not in data:
             return result
 
@@ -311,6 +314,7 @@ class HumanCore(BaseCore):
                 'timestamps'
             ][frame_n]
         except:
+            print("Timestamps missing")
             raise Exception("Timestamp not found")
 
         return timestamp
