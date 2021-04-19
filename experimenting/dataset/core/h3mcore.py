@@ -175,9 +175,9 @@ class HumanCore(BaseCore):
                 t = self.try_get_timestamp_from_id(i)
                 if t < last:
                     last = 0
-                    if t - last > freq:
-                        mask[i] = True
-                        last = t
+                if t - last > freq:
+                    mask[i] = True
+                    last = t
             except:
                 continue
         return mask
