@@ -10,7 +10,9 @@ Getting Started with Lifting Monocular Events to 3D Human Poses
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+   experimenting.dataset
+   experimenting.agents
+   experimenting.models
 
 
 In brief
