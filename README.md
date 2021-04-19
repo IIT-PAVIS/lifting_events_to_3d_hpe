@@ -33,13 +33,8 @@ from the RGB Human3.6m dataset. Experiments demonstrate that our method achieves
 solid accuracy, narrowing the performance gap between standard RGB and
 event-based vision. 
 
-- Code available at https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe
-  (implemented with pytorch-lightning [[1]](#1))
-- Documentation at https://event-camera.readthedocs.io/en/latest/
-- Paper (coming soon)
-
-- [Code](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe)
-- [Technical documentation](https://event-camera.readthedocs.io/en/latest)
+- [Code](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe) (implemented with pytorch-lightning [[1]](#1))
+- [Documentation](https://event-camera.readthedocs.io/en/latest)
 - [Paper (coming soon)]()
 
 ## Event-Human3.6m
@@ -54,16 +49,17 @@ The generation pipeline details and code are released at [https://github.com/IIT
 ### DHP19
 
 | Method                    | input     | MPJPE(mm) |
-|---------------------------|-----------|-----------|
+|---------------------------|-----------|-----------:|
 | Calabrese et al.          | stereo    |     79.63 |
 | Constant-count -- stage 3 | monocular |     92.09 |
 | Voxel-grid -- stage 3     | monocular |     95.51 |
 | Constant-count -- stage 1 | monocular |     96.69 |
 | Voxel-grid -- stage 1     | monocular |    105.24 |
 
-### H3m
+### Event-H3m
+
 | Method                                                            | input  | MPJPE(mm) |
-|-------------------------------------------------------------------|--------|-----------|
+|-------------------------------------------------------------------|--------|-----------:|
 | Metha \etal (ResNet-50)                                           | RGB    |     80.50 |
 | Kanazawa \etal  \cite{Kanazawa_2018}                              | RGB    |     88.00 |
 | Nibali \etal \cite{Nibali20183DHeatmaps}                          | RGB    |     57.00 |
