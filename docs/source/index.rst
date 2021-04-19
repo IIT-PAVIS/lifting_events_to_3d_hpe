@@ -3,7 +3,6 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-
 **********************************
 Getting Started with Lifting Monocular Events to 3D Human Poses
 **********************************
@@ -11,11 +10,16 @@ Getting Started with Lifting Monocular Events to 3D Human Poses
    :maxdepth: 2
    :caption: Contents:
 
-* Train classification models based on ResNet18, Resnet34, ...
-* Train 3D reconstruction models
-* Dataset adpatation for DHP19 dataset
-* Generate events from events dataset with different frames representations
-  (constant-count, spatiotemporal voxelgrid)
+   modules
+
+
+In brief
+==========
+
+* Train classification and reconstruction models based on ResNet34 and Resnet50
+* Train 2D and 3D HPE models 
+* Two datasets (DHP19, Event-H3m)
+* Different event representations (constant-count, spatiotemporal voxelgrid)
 
 Environment
 ============
@@ -50,14 +54,17 @@ Agents
 Train and evaluate for different tasks
 If you want to launch an experiment with default parameters (backbone `ResNet50`, `DHP19` with `constant-count` representation, see the paper for details), you simply do (after setup and data):
 
-```
-python train.py 
-```
-
+Train
+-------
 A complete configuration is provided at `./confs/train/config.yaml`. In
 particular, refer to `./confs/train/dataset/...` for dataset configuration
 (including `path` specification), and to `./confs/train/training` for different
 tasks. 
+
+```
+python train.py 
+```
+
 
 If you want to continue an ended experiment, you can set
 `training.load_training` to `true` and provide a checkpoint path:
@@ -66,31 +73,31 @@ If you want to continue an ended experiment, you can set
 python train.py training.load_training=true training.load_path={YOUR_MODEL_CHECKPONT}
 ```
 
-To continue a previous experiment:
-```
-python train.py training.load_training=true training.load_path={YOUR_MODEL_CHECKPONT}
-```
+To initialize a model with a checkpoint of an ended experiments (load only the
+model, not the trainer neither the optimizer status)
+
+``` python train.py training.load_training=false training.load_path={YOUR_MODEL_CHECKPONT} ```
 
 To train a margipose\_estimator agent:
 ```
 python scripts/train.py training=margipose dataset=$DATASET training.model=$MODEL training.batch_size=$BATCH_SIZE training.stages=$N_STAGES
 ```
 Supported dataset are: `constantcount_h3m`, `voxelgrid_h3m`, `constantcount_dhp19`, `voxelgrid_dhp19`
-To evaluate a model, you can use:
-```
-python scripts/eveluate.py training.load_path={YOUR_MODEL_CHECKPOINT}
-```
+
 
 Test
 -------
-You can test your models using our multi-movement evaluation script. The tool
-generates a `result.json` file in the provided checkpoint path.
+
+To evaluate a model, you can do the following (it generate a `results.json` file with the outputs):
 ```
-python evaluate_dhp19.py training={TASK} dataset={DATASET_REPRESENTATION} load_path={YOUR_MODEL_CHECKPOINT}
+python scripts/evaluate.py training.load_path={YOUR_MODEL_CHECKPOINT} dataset=$DATASET
+```
+
+To evaluate a model on per-movement protocol *for DHP19*, you can do:
+```
+python scripts/eveluate_dhp19_per_movement.py training.load_path={YOUR_MODEL_CHECKPOINT} dataset=$DATASET
 ```
 
 
-**********************************
-Code-base documentation
-**********************************
-   modules
+
+
