@@ -1,7 +1,9 @@
+# Lifting Monocular Events to 3D Human Poses
+[![Build Status](https://travis-ci.com/gianscarpe/event-based-monocular-hpe.svg?branch=master)](https://travis-ci.com/gianscarpe/event-based-monocular-hpe)
 [![Documentation
 Status](https://readthedocs.org/projects/event-camera/badge/?version=latest)](https://event-camera.readthedocs.io/en/latest/?badge=latest)
+[![Coverage Status](https://coveralls.io/repos/github/gianscarpe/event-based-monocular-hpe/badge.svg?branch=master)](https://coveralls.io/github/gianscarpe/event-based-monocular-hpe?branch=master)
 
-# Lifting Monocular Events to 3D Human Poses
 [Gianluca Scarpellini](https://scarpellini.dev/) [Pietro Morerio](https://scholar.google.com/citations?user=lPV9rbkAAAAJ&hl=it&oi=ao) [Alessio Del Bue](https://scholar.google.com/citations?user=LUzvbGIAAAAJ&hl=it&oi=ao)
 
 ![Method](./resources/figures/abstr_mono.png)
@@ -36,9 +38,15 @@ event-based vision.
 - Documentation at https://event-camera.readthedocs.io/en/latest/
 - Paper (coming soon)
 
+- [Code](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe)
+- [Technical documentation](https://event-camera.readthedocs.io/en/latest)
+- [Paper (coming soon)]()
+
 ## Event-Human3.6m
-![Example of simulated events from Human3.6m](./resources/figures/h3m.png)
 The generation pipeline details and code are released at [https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m).
+
+![Example of simulated events from Human3.6m](./resources/figures/h3m.png)
+
 
 ## Results
 ![Results](./resources/figures/results.png)
