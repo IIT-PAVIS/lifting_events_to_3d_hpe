@@ -19,7 +19,8 @@ In order to generate good-quality labels, you need to use full joints positions 
 
 1. Use `event_library` generator script to generate `raw` events from `mp4` files:
 ```
-python event_library/tools/generate.py frames_dir=path/to/dataset out_dir=out upsample=true emulate=true search=false representation=raw
+python event_library/tools/generate.py frames_dir=path/to/dataset out_dir=out \
+upsample=true emulate=true search=false representation=raw
 ```
 2. Launch `prepare_data_h3m.py` to generate a `.npz` file containing FULL_D3_Positions
 3. Launch `genearate_datasets.py` to generate `constant_count` frames and joints

@@ -77,7 +77,8 @@ model, not the trainer neither the optimizer status)
 
 To train a margipose\_estimator agent:
 ```
-python scripts/train.py training=margipose dataset=$DATASET training.model=$MODEL training.batch_size=$BATCH_SIZE training.stages=$N_STAGES
+python scripts/train.py training=margipose dataset=$DATASET training.model=$MODEL \
+training.batch_size=$BATCH_SIZE training.stages=$N_STAGES
 ```
 Supported dataset are: `constantcount_h3m`, `voxelgrid_h3m`, `constantcount_dhp19`, `voxelgrid_dhp19`
 
@@ -92,7 +93,8 @@ python scripts/evaluate.py training.load_path={YOUR_MODEL_CHECKPOINT} dataset=$D
 
 To evaluate a model on per-movement protocol *for DHP19*, you can do:
 ```
-python scripts/eveluate_dhp19_per_movement.py training.load_path={YOUR_MODEL_CHECKPOINT} dataset=$DATASET
+python scripts/eveluate_dhp19_per_movement.py \
+training.load_path={YOUR_MODEL_CHECKPOINT} dataset=$DATASET
 ```
 
 
