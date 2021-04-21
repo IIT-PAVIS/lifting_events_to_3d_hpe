@@ -6,12 +6,14 @@ Status](https://readthedocs.org/projects/event-camera/badge/?version=latest)](ht
 
 [Gianluca Scarpellini](https://scarpellini.dev/) [Pietro Morerio](https://scholar.google.com/citations?user=lPV9rbkAAAAJ&hl=it&oi=ao) [Alessio Del Bue](https://scholar.google.com/citations?user=LUzvbGIAAAAJ&hl=it&oi=ao)
 
-![Method](./resources/figures/abstr_mono.png)
+
 
 ## Table of contents
 - [Abstract](#Abstract)
 - [Results](#Results)
 - [References](#References)
+
+![Method](./resources/figures/hpe.gif)
 
 ## Abstract
 
@@ -42,6 +44,9 @@ The generation pipeline details and code are released at [https://github.com/IIT
 
 ![Example of simulated events from Human3.6m](./resources/figures/h3m.png)
 
+
+## Method
+![Method](./resources/figures/abstr_mono.png)
 
 ## Results
 ![Results](./resources/figures/results.png)
