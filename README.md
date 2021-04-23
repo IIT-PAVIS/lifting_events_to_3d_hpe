@@ -63,17 +63,17 @@ The generation pipeline details and code are released at [https://github.com/IIT
 
 ### Event-H3m
 
-| Method                                     | input  | MPJPE(mm) |
-|--------------------------------------------|--------|-----------|
-| Metha et al. 2018                          | RGB    |     80.50 |
-| Kanazawa et al. 2018                       | RGB    |     88.00 |
-| Nibali et al. 2018                         | RGB    |     57.00 |
-| Pavlakos et al.  2017                      | RGB    |     71.90 |
-| Luvizon et al. 2018                        | RGB    |     53.20 |
-| Cheng et al. 2020                          | RGB    |     40.10 |
-|--------------------------------------------|--------|-----------|
-| Spatio-temporal voxel-grid \textbf{(Ours)} | Events |    119.18 |
-| Constant-count \textbf{(Ours)}             | Events |    116.40 |
+| Method                     | input  | MPJPE(mm) |
+|----------------------------|--------|-----------|
+| Metha et al. 2018          | RGB    |     80.50 |
+| Kanazawa et al. 2018       | RGB    |     88.00 |
+| Nibali et al. 2018         | RGB    |     57.00 |
+| Pavlakos et al.  2017      | RGB    |     71.90 |
+| Luvizon et al. 2018        | RGB    |     53.20 |
+| Cheng et al. 2020          | RGB    |     40.10 |
+|----------------------------|--------|-----------|
+| Spatio-temporal voxel-grid | Events |    119.18 |
+| Constant-count             | Events |    116.40 |
 
 
 ## BibTex Citation
