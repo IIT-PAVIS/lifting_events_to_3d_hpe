@@ -53,30 +53,44 @@ The generation pipeline details and code are released at [https://github.com/IIT
 
 ### DHP19
 
-| Method                    | input     | MPJPE(mm) |
-|---------------------------|-----------|-----------:|
-| Calabrese et al.          | stereo    |     79.63 |
-| Constant-count -- stage 3 | monocular |     92.09 |
-| Voxel-grid -- stage 3     | monocular |     95.51 |
-| Constant-count -- stage 1 | monocular |     96.69 |
-| Voxel-grid -- stage 1     | monocular |    105.24 |
+| Method                     | input     | MPJPE(mm) |
+|----------------------------|-----------|-----------|
+| Calabrese et al. [[9]](#9) | stereo    |     79.63 |
+| Constant-count -- stage 3  | monocular |     92.09 |
+| Voxel-grid -- stage 3      | monocular |     95.51 |
+| Constant-count -- stage 1  | monocular |     96.69 |
+| Voxel-grid -- stage 1      | monocular |    105.24 |
 
 ### Event-H3m
 
-| Method                     | input  | MPJPE(mm) |
-|----------------------------|--------|-----------|
-| Metha et al. 2018          | RGB    |     80.50 |
-| Kanazawa et al. 2018       | RGB    |     88.00 |
-| Nibali et al. 2018         | RGB    |     57.00 |
-| Pavlakos et al.  2017      | RGB    |     71.90 |
-| Luvizon et al. 2018        | RGB    |     53.20 |
-| Cheng et al. 2020          | RGB    |     40.10 |
-|----------------------------|--------|-----------|
-| Spatio-temporal voxel-grid | Events |    119.18 |
-| Constant-count             | Events |    116.40 |
+| Method                          | input  | MPJPE(mm) |
+|---------------------------------|--------|-----------|
+| Metha et al. 2018 [[3]](#3)     | RGB    |     80.50 |
+| Kanazawa et al. 2018 [[4]](#4)  | RGB    |     88.00 |
+| Nibali et al. 2018 [[5]](#5)    | RGB    |     57.00 |
+| Pavlakos et al.  2017 [[6]](#6) | RGB    |     71.90 |
+| Luvizon et al. 2018 [[7]](#7)   | RGB    |     53.20 |
+| Cheng et al. 2020 [[8]](#8)     | RGB    |     40.10 |
+|---------------------------------|--------|-----------|
+| Spatio-temporal voxel-grid      | Events |    119.18 |
+| Constant-count                  | Events |    116.40 |
 
 ## References
 <a id="1">[1]</a> Falcon, WA and .al (2019). PyTorch Lightning GitHub. Note:
 https://github.com/PyTorchLightning/pytorch-lightning
 
 <a id="2">[2]</a> Gallego, Guillermo, Tobi Delbruck, Garrick Michael Orchard, Chiara Bartolozzi, Brian Taba, Andrea Censi, Stefan Leutenegger, et al. 2020. “Event-Based Vision: A Survey.” _IEEE Transactions on Pattern Analysis and Machine Intelligence_. Institute of Electrical and Electronics Engineers (IEEE), 1. <http://dx.doi.org/10.1109/TPAMI.2020.3008413>
+
+<a id="3">[3]</a> Dushyant Mehta,  Srinath Sridhar,  Oleksandr Sotnychenko,Helge  Rhodin,   Mo-Hammad  Shafiei,   Hans-Peter  Seidel,Weipeng Xu, Dan Casas, Christian Theobalt, and Rey JuanCarlos.  VNect:  Real-time 3D Human Pose Estimation witha Single RGB Camera. Technical report, 2017. 2, 3, 5, 6
+
+<a id="4">[4]</a> Angjoo Kanazawa, Michael J. Black, David W. Jacobs, andJitendra  Malik.   End-to-end  recovery  of  human  shape  andpose.   In2018 IEEE/CVF Conference on Computer Visionand Pattern Recognition. IEEE, jun 2018. 6
+
+<a id="5">[5]</a> Aiden  Nibali,  Zhen  He,  Stuart  Morgan,  and  Luke  Pren-dergast.3D  Human  Pose  Estimation  with  2D  MarginalHeatmaps. 6 2018
+
+<a id="6">[6]</a> Georgios Pavlakos, Xiaowei Zhou, Konstantinos G. Derpa-nis, and Kostas Daniilidis. Coarse-to-fine volumetric predic-tion for single-image 3d human pose. In2017 IEEE Confer-ence on Computer Vision and Pattern Recognition (CVPR),page nil, 7 2017.
+  
+<a id="7">[7]</a> Diogo C. Luvizon, David Picard, and Hedi Tabia. 2d/3d poseestimation and action recognition using multitask deep learn-ing.  InThe IEEE Conference on Computer Vision and Pat-tern Recognition (CVPR), June 2018.
+  
+<a id="8">[8]</a> Yu Cheng, Bo Yang, Bo Wang, and Robby T. Tan. 3d humanpose estimation using spatio-temporal networks with explicitocclusion training.Proceedings of the AAAI Conference onArtificial Intelligence, 34(07):1
+
+<a id="9">[9]</a> Enrico Calabrese, Gemma Taverni, Christopher Awai East-hope, Sophie Skriabine, Federico Corradi, Luca Longinotti,Kynan  Eng,  and  Tobi  Delbruck.   Dhp19:  Dynamic  visionsensor  3d  human  pose  dataset.    InThe  IEEE  Conferenceon Computer Vision and Pattern Recognition (CVPR) Work-shops, June 2019.
