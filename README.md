@@ -37,7 +37,7 @@ event-based vision.
 
 - [Code](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe) (implemented with pytorch-lightning [[1]](#1))
 - [Documentation](https://event-camera.readthedocs.io/en/latest)
-- [Paper](https://arxiv.org/pdf/2104.10609.pdf)
+- [Paper](https://arxiv.org/abs/2104.10609)
 
 ## Event-Human3.6m
 The generation pipeline details and code are released at [https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m](https://github.com/IIT-PAVIS/lifting_events_to_3d_hpe/tree/master/scripts/h3m).
