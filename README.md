@@ -63,17 +63,17 @@ The generation pipeline details and code are released at [https://github.com/IIT
 
 ### Event-H3m
 
-| Method                                                            | input  | MPJPE(mm) |
-|-------------------------------------------------------------------|--------|-----------:|
-| Metha \etal (ResNet-50)                                           | RGB    |     80.50 |
-| Kanazawa \etal  \cite{Kanazawa_2018}                              | RGB    |     88.00 |
-| Nibali \etal \cite{Nibali20183DHeatmaps}                          | RGB    |     57.00 |
-| Pavlakos \etal \cite{pavlakos17_coars_fine_volum_predic_singl}    | RGB    |     71.90 |
-| Luvizon \etal \cite{Luvizon_2D3D_Pose_Estimation_CVPR_2018_paper} | RGB    |     53.20 |
-| Cheng \etal \cite{Cheng_2020}                                     | RGB    |     40.10 |
-|-------------------------------------------------------------------|--------|-----------|
-| Spatio-temporal voxel-grid \textbf{(Ours)}                        | Events |    119.18 |
-| Constant-count \textbf{(Ours)}                                    | Events |    116.40 |
+| Method                                     | input  | MPJPE(mm) |
+|--------------------------------------------|--------|-----------|
+| Metha et al. 2018                          | RGB    |     80.50 |
+| Kanazawa et al. 2018                       | RGB    |     88.00 |
+| Nibali et al. 2018                         | RGB    |     57.00 |
+| Pavlakos et al.  2017                      | RGB    |     71.90 |
+| Luvizon et al. 2018                        | RGB    |     53.20 |
+| Cheng et al. 2020                          | RGB    |     40.10 |
+|--------------------------------------------|--------|-----------|
+| Spatio-temporal voxel-grid \textbf{(Ours)} | Events |    119.18 |
+| Constant-count \textbf{(Ours)}             | Events |    116.40 |
 
 
 ## BibTex Citation
