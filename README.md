@@ -75,9 +75,6 @@ The generation pipeline details and code are released at [https://github.com/IIT
 | Spatio-temporal voxel-grid | Events |    119.18 |
 | Constant-count             | Events |    116.40 |
 
-
-## BibTex Citation
-
 ## References
 <a id="1">[1]</a> Falcon, WA and .al (2019). PyTorch Lightning GitHub. Note:
 https://github.com/PyTorchLightning/pytorch-lightning
