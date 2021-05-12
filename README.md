@@ -38,7 +38,7 @@ Follow the guide at `scripts/h3m/README.md`
 
 ### Model zoo
 A model zoo of backbones and models for `constant_count` and `voxelgrid` trained
-both with `DHP19` and `Events-H3m` is publicly accessible at [work in progress].
+both with `DHP19` and `Events-H3m` is publicly accessible at [this link](https://drive.google.com/drive/folders/1b5BTt4A8kRGPAVwZ2HY1RKoMQ54lPsGZ?usp=sharing)
 
 ## Agents
 
